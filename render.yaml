@@ -1,6 +1,0 @@
-services:
-  - type: web
-    name: onlinebookstore
-    runtime: java
-    buildCommand: mvn clean package
-    startCommand: java -jar target/onlinebookstore.war
