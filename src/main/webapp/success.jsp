@@ -140,6 +140,9 @@ body{
 .profile:hover .profile-content{
     display:block;
 }
+.profile-content.show{
+    display:block;
+}
 
 /* ADMIN PANEL */
 
