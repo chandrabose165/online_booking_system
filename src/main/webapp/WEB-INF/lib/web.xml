@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    FIX 25: web.xml was completely empty (0 bytes).
+            Added proper Jakarta EE 5 descriptor with servlet mappings and welcome file.
+            Also moved from WEB-INF/lib/ (wrong location) to WEB-INF/ (correct location).
+-->
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+                             https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+    <display-name>Online Book Store</display-name>
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>javaclass.Loginservlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/Loginservlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>javaclass.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/RegisterServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+    <servlet-name>AddToCartServlet</servlet-name>
+    <servlet-class>javaclass.AddToCartServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>AddToCartServlet</servlet-name>
+    <url-pattern>/AddToCartServlet</url-pattern>
+</servlet-mapping>
+
+</web-app>

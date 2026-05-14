@@ -1,0 +1,8 @@
+DEPLOYMENT STEPS
+
+1. Upload project to GitHub
+2. Create Render account
+3. Connect GitHub repository
+4. Render automatically detects render.yaml
+5. Add cloud MySQL database
+6. Update DatabaseConnection.java with cloud DB URL
