@@ -41,13 +41,8 @@ This project allows users to browse books, register/login, and simulate online p
 |---|---|
 | `chandu` | `bose55` |
 
----
 
-## 🌐 Live Website
 
-👉 https://online-booking-system-2bbu.onrender.com
-
----
 
 ## 📷 Screens Included
 
